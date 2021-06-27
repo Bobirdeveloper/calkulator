@@ -1,0 +1,21 @@
+import time
+
+print(time.time())
+
+print("############################")
+cur_time = time.time()
+local_time = time.localtime(cur_time)
+print("Local Time type()", type(local_time))
+print("Local Time", local_time)
+print("Year :", local_time.tm_year)
+print("Month :", local_time.tm_mon)
+print("Day :", local_time.tm_mday)
+print("Hour :", local_time.tm_hour)
+print("Min :", local_time.tm_min)
+print("Sec :", local_time.tm_sec)
+print("*************************")
+# print("CPU clock :", time.clock())
+print("sleep()")
+print("Start : %s" % time.ctime())
+time.sleep(5)
+print("End : %s" % time.ctime())
